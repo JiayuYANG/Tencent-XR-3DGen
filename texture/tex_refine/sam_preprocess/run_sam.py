@@ -23,7 +23,7 @@ gpu = os.environ.get("CUDA_VISIBLE_DEVICES", "0")
 # sam_predictor = sam_init("/aigc_cfs_gdp/neoshang/models/sam/sam_vit_h_4b8939.pth", gpu)
 # sam_predictor = sam_init("/aigc_cfs_2/neoshang/models/sam/sam_vit_h_4b8939.pth", gpu)
 # sam_predictor = sam_init("/aigc_cfs/xibinsong/models/sam_model/sam_vit_h_4b8939.pth", gpu)
-sam_predictor = sam_init("/aigc_cfs_gdp/xibin/z123_control/models/sam_model/sam_vit_h_4b8939.pth")
+sam_predictor = sam_init("/workspace/Tencent_XR_3DGen/StableSAM/sam_vit_h_4b8939.pth")
 sam_predictor.model.eval()
 print("load sam ckpt done.")
 

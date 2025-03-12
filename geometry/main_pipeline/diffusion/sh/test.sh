@@ -11,6 +11,6 @@
 # ## test 1 view cond diffusion
 CUDA_VISIBLE_DEVICES=0 \
 python scripts/test_mmdit_image23D_flow_1view.py \
-    --exp_dir "configs/1view_gray_2048_flow" \
-    --save_dir "configs/1view_gray_2048_flow" \
-    --image_dir "/data/validations/images"
+    --exp_dir "../../../../Tencent_XR_3DGen/geometry_dit" \
+    --save_dir "./outputs/" \
+    --image_dir "./sample_images/"

@@ -17,8 +17,8 @@ if not os.path.exists(tracer_b7_ckpt_path):
     # shutil.copy("/aigc_cfs_gdp/neoshang/models/tracer_b7/tracer_b7.pth", tracer_b7_ckpt_path)
     # shutil.copy("/aigc_cfs_gdp/neoshang/models/fba_matting/fba_matting.pth", fba_matting_path)
 
-    shutil.copy("/aigc_cfs_gdp/xibin/z123_control/models/sam_model/tracer_b7.pth", tracer_b7_ckpt_path)
-    shutil.copy("/aigc_cfs_gdp/xibin/z123_control/models/sam_model/fba_matting.pth", fba_matting_path)
+    shutil.copy("/workspace/Tencent_XR_3DGen/tracer_b7/tracer_b7.pth", tracer_b7_ckpt_path)
+    shutil.copy("/workspace/Tencent_XR_3DGen/fba/fba_matting.pth", fba_matting_path)
 
 from carvekit.api.high import HiInterface
 

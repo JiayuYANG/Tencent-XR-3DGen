@@ -1,0 +1,7 @@
+setup.py
+/workspace/Tencent-XR-3DGen/geometry/main_pipeline/diffusion/utils/mc/sparse_mc/mc33/src/bindings.cpp
+/workspace/Tencent-XR-3DGen/geometry/main_pipeline/diffusion/utils/mc/sparse_mc/mc33/src/marching_cubes_33.cu
+mc33.egg-info/PKG-INFO
+mc33.egg-info/SOURCES.txt
+mc33.egg-info/dependency_links.txt
+mc33.egg-info/top_level.txt

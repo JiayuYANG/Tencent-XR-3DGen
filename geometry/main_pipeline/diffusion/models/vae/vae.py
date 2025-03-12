@@ -4,13 +4,13 @@ import torch
 import os
 from einops import repeat
 from easydict import EasyDict as edict
-try:
-    root_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-    sys.path.append(os.path.join(root_dir, "CraftsMan3D"))
-    from craftsman.models.autoencoders.michelangelo_autoencoder import MichelangeloAutoencoder
-    from craftsman.utils.config import ExperimentConfig, load_config
-except:
-    exit("Error: please clone CraftsMan3D first from https://github.com/wyysf-98/CraftsMan3D.git")
+# try:
+root_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.append(os.path.join(root_dir, "CraftsMan3D"))
+from craftsman.models.autoencoders.michelangelo_autoencoder import MichelangeloAutoencoder
+from craftsman.utils.config import ExperimentConfig, load_config
+# except:
+#     exit("Error: please clone CraftsMan3D first from https://github.com/wyysf-98/CraftsMan3D.git")
 
 class MichelangeloAutoencoderSparse(MichelangeloAutoencoder):
     def sparse_query(self, xyz_samples, latents, num_chunks=10000):

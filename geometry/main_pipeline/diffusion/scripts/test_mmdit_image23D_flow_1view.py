@@ -64,7 +64,7 @@ def test(args):
     vae = get_vae_model(configs)
     print("vae loading ckpt...")
     vae_state_dict = torch.load(
-        configs["vae_config"]["pretrain_path"], map_location='cpu')["state_dict"]
+        configs["vae_config"]["pretrain_path"], map_location='cpu', weights_only=False)["state_dict"]
     new_vae_state_dict = {}
     for key, value in vae_state_dict.items():
         new_vae_state_dict[key[12:]] = value

@@ -1,0 +1,31 @@
+ninja
+imageio
+imageio-ffmpeg
+opencv-python
+rembg
+dotmap
+onnxruntime
+segment_anything
+cupy-cuda12x
+basicsr
+realesrgan
+compel
+kiui
+peft
+diffusers
+transformers
+ip-adapter @ git+https://github.com/tencent-ailab/IP-Adapter.git
+nvdiffrast @ git+https://github.com/NVlabs/nvdiffrast.git
+open_clip_torch
+easydict
+jaxtyping
+typeguard
+pytorch_lightning
+wandb
+einops
+trimesh
+omegaconf
+xformers
+carvekit
+open3d
+openai==0.28
